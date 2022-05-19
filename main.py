@@ -3,7 +3,7 @@ from calculator import Calculator
 if __name__ == '__main__':
     print(f"Versión {Calculator.version} de la calculadora.")
 
-    op = input("¿Qué operación desea realizar? (suma o resta): ")
+    op = input("¿Qué operación desea realizar? (suma, resta o multiplicacion): ")
 
     if op == "suma":
         print("Suma")
@@ -15,3 +15,8 @@ if __name__ == '__main__':
         num1 = int(input("Introduzca el primer número: "))
         num2 = int(input("Introduzca el segundo número: "))
         print(f"La resta de {num1} y {num2} es {Calculator.sub(num1, num2)}")
+    elif op == "multiplicacion":
+        print("Multiplicacion")
+        num1 = int(input("Introduzca el primer número: "))
+        num2 = int(input("Introduzca el segundo número: "))
+        print(f"La multiplicacion de {num1} y {num2} es {Calculator.mul(num1, num2)}")

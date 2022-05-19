@@ -1,6 +1,6 @@
 
 class Calculator:
-    version = '1.0'
+    version = '2.0'
 
     @staticmethod
     def add(a, b):
@@ -9,3 +9,7 @@ class Calculator:
     @staticmethod
     def sub(a, b):
         return a - b
+
+    @staticmethod
+    def mul(a, b):
+        return a * b
